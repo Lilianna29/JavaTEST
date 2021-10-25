@@ -1,0 +1,22 @@
+package lesson1;
+
+public class Crew {
+    public static void Crew(String[] args) {
+        Course course1 = new Course(new Wire(40), new Puddle(10),
+                new Dirt(200), new Fence(6));
+
+        Team Crew1 = new Team("Crew1", new Cat("Kurt"), new dog("Mery"),
+                new mouse("Jerry"), new leon("Leon"));
+
+        Team Crew2 = new Team("Crew2", new giraffe("Tomas"), new Cat("Ingeborga"),
+                new Dog("Britney"), new mouse("Chilly"));
+
+
+        course1.doIt(Crew1);
+        course1.doIt(Crew2);
+
+        System.out.println("\nFinish\n");
+        Crew1.showResults();
+        System.out.println();
+        Crew2.showResults();
+    }
